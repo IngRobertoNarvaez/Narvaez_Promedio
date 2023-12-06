@@ -7,6 +7,8 @@ int main(int argc, char const *argv[])
     int primeroprogreso[23];
     int segundoprogreso[23];
     int tercerprogreso[23];
+    int suma[23];
+    int progreso[23];
     for (int i = 0; i < 23; i++)
     {
         primeroprogreso[i] = rand() % 10 + 1;
@@ -32,6 +34,17 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < 23; i++)
     {
         printf("%d ", tercerprogreso[i]);
+    }
+    printf("Mayor promedio:");
+    for (int i = 0; i < suma; i++)
+    {
+        suma[i] = primeroprogreso[i] + segundoprogreso[i] + tercerprogreso[i];
+        progreso[i] = suma[i] / 30;
+    }
+
+    for (int i = 0; i < progreso; i++)
+    {
+        printf("Mayor promedio es de : %d", progreso[i]);
     }
 
     return 0;
